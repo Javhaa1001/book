@@ -1,0 +1,67 @@
+p{
+  margin-bottom: 20px;
+}
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+.image-back{
+  position: absolute;
+  width: 1300px;
+  height: 700px;
+  
+}
+
+.image-backk{
+  position: absolute;
+  margin-top: 700px;
+}
+
+.image-backkk{
+  position: absolute;
+  margin-top: 1600px;
+  width: 1400px;
+}
+
+.title,
+.anhaarah-title{
+  position: relative;
+  font-family: 'Honk', system-ui;
+  font-size: 150px;
+  color: rgb(93, 233, 255);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+body{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 20px;
+}
+.zaawar1,
+.zaawar2{
+  color: rgb(13, 12, 12);
+  font-size: 40px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  position: relative;
+  font-family: 'Pacifico', cursive, bold;
+}
+
+.anhaarah1,
+.anhaarah2,
+.anhaarah3{
+  color: rgb(0, 0, 0);
+  /* font-family: 'Black Ops One', system-ui; */
+  font-size: 40px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  position: relative; 
+  font-family: 'Pacifico', cursive,bold;
+
+}
