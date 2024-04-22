@@ -195,6 +195,70 @@ export const products = [
       "shades"
     ],
     link: "/pdfuud/The-Young-Pilgrim-A-Tale-Illustrative-of.pdf"
+  },{
+
+    id: "aad29d11-ea98-41ee-9285-b916638cac4a",
+    image: "images/books/13.jpg",
+    name: "A Conservation about Healthy Eating",
+    rating: {
+      stars: 5,
+      count: 115
+    },
+    link: "/pdfuud/conservation.pdf"
+  },
+  {
+
+    id: "aad29d11-ea98-41ee-9285-b916638cac4a",
+    image: "images/books/14.jpg",
+    name: "A Healthy Guide to Eating",
+    rating: {
+      stars: 4,
+      count: 201
+    },
+    link: "/pdfuud/healthy.pdf"
+  },
+  {
+
+    id: "aad29d11-ea98-41ee-9285-b916638cac4a",
+    image: "images/books/15.jpg",
+    name: "Me Before You",
+    rating: {
+      stars: 4,
+      count: 201
+    },
+    link: "/pdfuud/before-you.pdf"
+  },
+  {
+
+    id: "aad29d11-ea98-41ee-9285-b916638cac4a",
+    image: "images/books/16.jpg",
+    name: "The Miracle Morning",
+    rating: {
+      stars: 3.5,
+      count: 85
+    },
+    link: "/pdfuud/miracle.pdf"
+  },
+  {
+
+    id: "aad29d11-ea98-41ee-9285-b916638cac4a",
+    image: "images/books/17.jpg",
+    name: "Philosophy of Biology",
+    rating: {
+      stars: 3,
+      count: 23
+    },
+    link: "/pdfuud/biology.pdf"
+  },
+  {
+
+    id: "aad29d11-ea98-41ee-9285-b916638cac4a",
+    image: "images/books/18.jpg",
+    name: "Tween Snow and Fire a Tale of the Last Kafir War",
+    rating: {
+      stars: 3,
+      count: 15
+    },
+    link: "/pdfuud/tween.pdf"
   }
-  
 ];
