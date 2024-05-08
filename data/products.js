@@ -13,7 +13,7 @@ export const products = [
       "sports",
       "apparel"
     ],
-    link: "https://www.gutenberg.org/ebooks/59478.html"
+    link: "https://www.gutenberg.org/ebooks/59478"
   },
   {
     id: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
@@ -28,7 +28,7 @@ export const products = [
       "sports",
       "basketballs"
     ],
-    link: "/pdfuud/The-Legend-Is-Born (2).pdf"
+    link: "https://manybooks.net/titles/the-legend-is-born"
   },
   {
     id: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
@@ -62,7 +62,7 @@ export const products = [
       "kitchen",
       "appliances"
     ],
-    link: "/pdfuud/Lady-Tanglewood (2).pdf"
+    link: "https://manybooks.net/titles/lady-tanglewood"
   },
   {
     id: "3ebe75dc-64d2-4137-8860-1f5a963e534b",
@@ -78,7 +78,7 @@ export const products = [
       "kitchen",
       "dining"
     ],
-    link: "/pdfuud/War-Of-The-Animals- (2).pdf"
+    link: "https://manybooks.net/titles/war-of-the-animals"
   },
   {
     id: "8c9c52b5-5a19-4bcb-a5d1-158a74287c53",
@@ -93,7 +93,7 @@ export const products = [
       "kitchen",
       "cookware"
     ],
-    link: "/pdfuud/His-Burning-Desire.pdf"
+    link: "https://www.kobo.com/gr/en/ebook/his-burning-desire"
   },
   {
     id: "dd82ca78-a18b-4e2a-9250-31e67412f98d",
@@ -109,7 +109,7 @@ export const products = [
       "sweaters",
       "apparel"
     ],
-    link: "/pdfuud/Dirt-Dealers.pdf"
+    link: "https://www.scribd.com/document/689636078/Dirt-Dealers"
   },
   {
     id: "77919bbe-0e56-475b-adde-4f24dfed3a04",
@@ -127,7 +127,7 @@ export const products = [
       "towels",
       "bath towels"
     ],
-    link: "/pdfuud/Forge-of-Foxenby (1).pdf"
+    link: "https://www.noor-book.com/en/ebook-Forge-of-Foxenby-pdf"
   },
   {
     id: "3fdfe8d6-9a15-4979-b459-585b0d0545b9",
@@ -142,7 +142,7 @@ export const products = [
       "bathroom",
       "cleaning"
     ],
-    link: "/pdfuud/Sound-of-Sirens.pdf"
+    link: "https://manybooks.net/titles/minkmanjother15soundofsirens.html"
   },
   {
     id: "58b4fc92-e98c-42aa-8c55-b6b79996769a",
@@ -159,7 +159,7 @@ export const products = [
       "running shoes",
       "footwear"
     ],
-    link: "/pdfuud/Gravy-Train.pdf"
+    link: "https://www.noor-book.com/en/ebook-Gravy-Train-pdf"
   },
   {
     id: "5968897c-4d27-4872-89f6-5bcb052746d7",
@@ -179,7 +179,7 @@ export const products = [
     ],
     type: "clothing",
     sizeChartLink: "images/clothing-size-chart.png",
-    link: "/pdfuud/Charles-W.-Quantrell.pdf"
+    link: "https://www.gutenberg.org/ebooks/61100"
   },
   {
     id: "aad29d11-ea98-41ee-9285-b916638cac4a",
@@ -194,7 +194,7 @@ export const products = [
       "accessories",
       "shades"
     ],
-    link: "/pdfuud/The-Young-Pilgrim-A-Tale-Illustrative-of.pdf"
+    link: "https://www.noor-book.com/en/ebook-The-Young-Pilgrim-A-Tale-Illustrative-of-The-Pilgrims-Progress-pdf"
   }
 
 ];
