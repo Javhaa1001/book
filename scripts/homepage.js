@@ -1,74 +1,69 @@
-import {cart, addToCart, updateCartQuantity} from '../data/cart.js';
-
-import {products} from '../data/products.js';
-
+import {cart, removeFromCart} from '../data/cart.js';
+import { products } from '../data/products.js';
 import { formatCurrency } from './utils/money.js';
 
-let productsHTML = '';
+let cartSummaryHTML = '';
 
-products.forEach((product) =>{
-  productsHTML +=`
-      <div class="product-container">
-              <div class="product-image-container">
-                <img class="product-image"
-                  src="${product.image}">
-              </div>
+cart.forEach((cartItem) => {
+  const productId = cartItem.productId;
 
-              <div class="product-name limit-text-to-2-lines">
-                ${product.name}
-              </div>
+  let matchingProduct;
 
-              <div class="product-rating-container">
-                <img class="product-rating-stars"
-                  src="images/ratings/rating-${product.rating.stars * 10}.png">
-                <div class="product-rating-count link-primary">
-                  ${product.rating.count}
+  products.forEach((product) => {
+    if (product.id === productId) {
+      matchingProduct = product;
+    }
+  });
+
+
+  cartSummaryHTML += `
+    <div class="cart-item-container 
+    js-cart-item-container-${matchingProduct.id}">
+
+
+            <div class="cart-item-details-grid">
+              <img class="product-image"
+                src="${matchingProduct.image}">
+
+              <div class="cart-item-details">
+                <div class="product-name">
+                  ${matchingProduct.name}
+                </div>
+
+                <div class="product-quantity">
+
+                  <span class="delete-quantity-link link-primary js-delete-link" data-product-id="${matchingProduct.id}">
+                  <button class="delete-button">
+                    Delete
+                  </button>
+                  </span>
                 </div>
               </div>
-
-
-
-              <div class="product-quantity-container">
-              <button class="adder-to-wish add-to-cart-button button-primary js-add-to-cart"
-              data-product-id="${product.id}">
-              <img class="cart-icon" src="images/logo/wish-list (3).png">
-              </button>
-              </div>
-
-              <div class="product-spacer"></div>
-              <div class="added-to-cart2">
-              <div class="added-to-cart">
-                <img src="images/icons/checkmark.png">
-                
-                <div class="tooltip">Хүслийн жагсаалт руу нэмэх</div>
-              </div>
-              </div>
-
-              <a href="${product.link}"download>
-              <button class="add-to-cart-button button-primary">
+              <div>
+              <a href="${matchingProduct.link}">
+              <button class="add-to-cart-button button-primary read-button">
               Read
-              <div class="tooltip">Номыг татах</div>
               </button>
               </a>
             </div>
-  `;
-},
-);
+              </div>
+              
+            </div>
+          </div>
+  `
+});
 
-document.querySelector('.js-products-grid').innerHTML = productsHTML;
+document.querySelector('.js-order-summary')
+.innerHTML = cartSummaryHTML;
 
+document.querySelectorAll('.js-delete-link')
+  .forEach((link) => {
+    link.addEventListener('click', () => {
+      const productId = link.dataset.productId;
+      removeFromCart(productId);
 
-
-
-
-document.querySelectorAll('.js-add-to-cart')
-  .forEach((button) => {
-    button.addEventListener('click', () => {
-      const productId = button.dataset.productId;
-
-      addToCart(productId);
-    
-      updateCartQuantity();
-     
+      const container = document.querySelector(
+        `.js-cart-item-container-${productId}`)
+        container.remove();
     });
   });
