@@ -37,7 +37,7 @@ products.forEach((product) =>{
                 <div class="tooltip">Хүслийн жагсаалт руу нэмэх</div>
               </div>
               </div>
-              <a href="wish-list.html">
+              <a href="${product.link}">
               <button class="add-to-cart-button button-primary">
               Read
               <div class="tooltip">Номыг татах</div>
