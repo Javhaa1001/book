@@ -46,7 +46,7 @@ export const products = [
     ],
     type: "clothing",
     sizeChartLink: "images/clothing-size-chart.png",
-    link: "/pdfuud/Trial-by-Sorcery (3).pdf"
+    link: "https://manybooks.net/titles/trial-by-sorcery"
   },
   {
     id: "54e0eccd-8f36-462b-b68a-8182611d9add",
